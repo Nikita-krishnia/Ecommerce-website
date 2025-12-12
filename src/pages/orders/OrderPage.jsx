@@ -2,9 +2,11 @@ import './OrderPage.css';
 import axios from 'axios';
 import { useEffect, useState, Fragment } from 'react';
 import dayjs from 'dayjs';
-import { formatMoney } from '../utils/money';
-import { Header } from '../components/Header';
-import BuyAgainIcon from '../assets/images/icons/buy-again.png';
+import { formatMoney } from '../../utils/money';
+import { Header } from '../../components/Header';
+import BuyAgainIcon from '../../assets/images/icons/buy-again.png';
+
+
 export function OrderPage({ cart }) {
     const [orders, setOrders] = useState([]);
 
@@ -36,7 +38,7 @@ export function OrderPage({ cart }) {
                                         </div>
                                         <div className="order-total">
                                             <div className="order-header-label">Total:</div>
-                                            <div>{order.totalCostCents}</div>
+                                            <div>{formatMoney(order.totalCostCents)}</div>
                                         </div>
                                     </div>
 
@@ -47,9 +49,9 @@ export function OrderPage({ cart }) {
                                 </div>
 
                                 <div className="order-details-grid">
-                                    {order.product.map((orderProduct) => {
+                                    {order.products.map((orderProduct) => {
                                         return (
-                                            <Fragment key={OrderPage.product.id}>
+                                            <Fragment key={orderProduct.product.id}>
                                                 <div className="product-image-container">
                                                     <img src={orderProduct.product.image} />
                                                 </div>
