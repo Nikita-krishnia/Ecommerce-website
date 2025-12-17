@@ -30,7 +30,7 @@ ecommerce-project/
 
 ## ⚙️ Setup
 ```bash
-git clone https://github.com/USERNAME/ecommerce-project.git
+git clone https://github.com/Nikita-krishnia/Ecommerce-website.git
 cd ecommerce-project
 ```
 
