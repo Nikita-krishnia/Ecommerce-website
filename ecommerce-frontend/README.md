@@ -71,13 +71,19 @@ ecommerce-frontend/
 git clone https://github.com/USERNAME/ecommerce-project.git
 ```
 2️⃣ Navigate to frontend folder
+```bash
 cd ecommerce-project/ecommerce-frontend
+```
 
 3️⃣ Install dependencies
+```bash
 npm install
+```
 
 4️⃣ Start the development server
+```bash
 npm run dev
+```
 
 
 ---
