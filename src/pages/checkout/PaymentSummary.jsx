@@ -5,7 +5,7 @@ import { formatMoney } from '../../utils/money';
 export function PaymentSummary({paymentSummary,loadCart}) {
     const navigate=useNavigate();
     const createOrder=async()=>{
-        await axios.post('./api/orders');
+        await axios.post('/api/orders');
         await loadCart();
         navigate('/orders');
     };
@@ -49,7 +49,9 @@ export function PaymentSummary({paymentSummary,loadCart}) {
                     </div>
 
                     <button className="place-order-button button-primary"
-                    onClick={createOrder}>
+                    data-testid="place-order-button"
+                    onClick={createOrder}
+                    >
                         Place your order
                     </button>
                 </>
