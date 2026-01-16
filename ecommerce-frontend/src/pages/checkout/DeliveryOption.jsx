@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { formatMoney } from '../../utils/money';
-import axios from 'axios';
+import api from '../../api/axios';
 export function DeliveryOption({cartItem,deliveryOptions,loadCart}){
     return (
          <div className="delivery-options">
