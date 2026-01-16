@@ -14,7 +14,7 @@ export function HomePage({cart,loadCart}) {
          
          const getHomeData=async ()=>{
             const urlPath = search ? `/api/products?search=${search}` : '/api/products';
-            const response = await axios.get(urlPath);
+            const response = await api.get(urlPath);
             setProducts(response.data);
          };
     getHomeData();
