@@ -10,7 +10,7 @@ export function OrderPage({ cart,loadCart }) {
 
     useEffect(() => {
         const fetchOrderPageData = async () => {
-            const response = await axios.get('/api/orders?expand=products');
+            const response = await api.get('/api/orders?expand=products');
             setOrders(response.data);
         };
         fetchOrderPageData();
