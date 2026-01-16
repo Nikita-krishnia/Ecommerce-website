@@ -12,7 +12,7 @@ export function CheckoutPage({ cart, loadCart }) {
 
   useEffect(() => {
     const fetchCheckoutData = async () => {
-      const response = await axios.get(
+      const response = await api.get(
         `${import.meta.env.VITE_API_URL}/api/delivery-options?expand=estimatedDeliveryTime`
       );
       setDeliveryOptions(response.data);
