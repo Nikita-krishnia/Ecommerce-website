@@ -1,6 +1,6 @@
 import './CheckoutHeader.css';
 import './CheckoutPage.css';
-import axios from 'axios';
+import api from '../../api/axios';
 import { useEffect, useState } from 'react';
 import { CheckoutHeader } from './CheckoutHeader';
 import { OrderSummary } from './OrderSummary';
