@@ -1,5 +1,5 @@
 import { useState } from "react";
-import axios from "axios";
+import api from '../../api/axios';
 import { formatMoney } from '../../utils/money';
 import CheckmarkIcon from '../../assets/images/icons/checkmark.png';
 
