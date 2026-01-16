@@ -82,7 +82,7 @@ describe('Product component', () => {
     const addToCartButton = screen.getByTestId('add-to-cart-button');
     await user.click(addToCartButton);
 
-    expect(axios.post).toHaveBeenCalledWith(
+    expect(api.post).toHaveBeenCalledWith(
       '/api/cart-items',
       {
         productId: 'e43638ce-6aa0-4b85-b27f-e1d07eb678c6',
