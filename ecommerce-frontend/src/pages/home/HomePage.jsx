@@ -1,4 +1,4 @@
-import axios from 'axios';
+import api from '../../api/axios';
 import './HomePage.css'
 import { useEffect, useState } from 'react';
 import { Header } from '../../components/Header';
