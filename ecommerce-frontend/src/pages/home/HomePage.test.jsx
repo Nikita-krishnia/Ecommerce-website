@@ -16,7 +16,7 @@ let user;
   beforeEach(() => {
     loadCart = vi.fn();
 
-    axios.get.mockImplementation(async (urlPath) => {
+    api.get.mockImplementation(async (urlPath) => {
       if (urlPath === '/api/products') {
         return {
           data: [{
