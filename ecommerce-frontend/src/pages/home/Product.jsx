@@ -9,7 +9,7 @@ export function Product({product,loadCart}){
     const [showAddedmsg,setShowAddedmsg]=useState(false);
 
     const addToCart = async () => {
-    await axios.post('/api/cart-items', {
+    await api.post('/api/cart-items', {
       productId: product.id,
       quantity
     });
