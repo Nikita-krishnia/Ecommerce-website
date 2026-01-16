@@ -1,6 +1,6 @@
 import { formatMoney } from "../../utils/money";
 import { useState } from "react";
-import axios from 'axios';
+import api from '../../api/axios';
 export function CartItemDetails({ cartItem, loadCart }) {
     const [isUpdatingQuantity, setIsUpdatingQuantity] = useState(false);
     const [quantity, setQuantity] = useState(cartItem.quantity);
