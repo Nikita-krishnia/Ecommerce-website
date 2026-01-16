@@ -5,7 +5,7 @@ import { OrderPage } from './pages/orders/OrderPage';
 import { TrackingPage } from './pages/TrackingPage';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import api from '../../api/axios';
 import './App.css'
 
 function App() {
