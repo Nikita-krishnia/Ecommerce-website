@@ -22,7 +22,7 @@ export function CheckoutPage({ cart, loadCart }) {
 
   useEffect(() => {
     const fetchPaymentSummary = async () => {
-      const response = await axios.get(
+      const response = await api.get(
         `${import.meta.env.VITE_API_URL}/api/payment-summary`
       );
       setPaymentSummary(response.data);
