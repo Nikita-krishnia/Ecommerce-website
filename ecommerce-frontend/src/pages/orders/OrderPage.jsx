@@ -1,5 +1,5 @@
 import './OrderPage.css';
-import axios from 'axios';
+import api from '../api/axios';
 import { useEffect, useState } from 'react';
 
 import { Header } from '../../components/Header';

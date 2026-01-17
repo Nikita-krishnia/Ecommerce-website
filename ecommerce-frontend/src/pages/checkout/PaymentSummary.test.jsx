@@ -85,7 +85,7 @@ describe('PaymentSummary component', () => {
     const placeOrderButton = screen.getByTestId('place-order-button');
     await user.click(placeOrderButton);
 
-    expect(axios.post).toHaveBeenCalledWith('/api/orders');
+    expect(api.post).toHaveBeenCalledWith('/api/orders');
     expect(loadCart).toHaveBeenCalled();
     expect(screen.getByTestId('url-path')).toHaveTextContent('/orders');
   });
