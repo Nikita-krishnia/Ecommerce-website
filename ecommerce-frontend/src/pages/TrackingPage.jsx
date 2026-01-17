@@ -1,7 +1,7 @@
 import './TrackingPage.css';
 import { Header } from '../components/Header';
 import { useParams } from 'react-router';
-import api from '../../api/axios';
+import api from '../api/axios';
 import dayjs from 'dayjs';
 import { useEffect, useState } from 'react';
 
