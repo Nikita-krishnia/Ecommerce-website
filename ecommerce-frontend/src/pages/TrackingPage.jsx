@@ -1,11 +1,7 @@
 import './TrackingPage.css';
 import { Header } from '../components/Header';
 import { useParams } from 'react-router';
-<<<<<<< HEAD
 import api from '../../api/axios';
-=======
-import api from '../api/axios';
->>>>>>> 9a94359 (refactor api call where axios)
 import dayjs from 'dayjs';
 import { useEffect, useState } from 'react';
 
